@@ -1,0 +1,14 @@
+.thumb { width : 50px;}
+
+.full { width : 150px;}
+
+.name { font-weight: bold;}
+
+.price {
+	text-align: right;
+}
+
+.error {
+	color: red;
+	font-style: italic;
+}

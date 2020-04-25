@@ -1,0 +1,29 @@
+<div class="pb-2 mt-4 mb-2">
+	<h1>Your Cart</h1>
+</div>
+
+<div class="row col-8">
+<table class="table">
+
+<thead>
+	<tr>
+		<th>ITEM</th>
+        <th>QTY</th>
+        <th>COST</th>
+	</tr>
+</thead>
+
+<!-- 
+	generate these table rows from the database
+-->
+{{#cart}}
+<tr>
+    <td>{{name}}</td>
+    <td>{{quantity}}</td>
+    <td>${{cost}}</td>
+</tr>
+{{/cart}}
+
+</table>
+
+<a href="/items" class="btn btn-primary">Continue Shopping</a>
